@@ -3,23 +3,23 @@ import { GraduationCap, Calendar } from "lucide-react";
 
 const education = [
   {
-    degree: "B.Tech in Computer Science",
-    institution: "Your University Name",
-    period: "2023 - 2027",
+    degree: "B.Tech in Computer Science and Artificial Intelligence",
+    institution: "Pydah College of Engineering(Autonomous)",
+    period: "2024 - 2028",
     description: "Currently pursuing Bachelor's degree with focus on software development, data structures, and algorithms.",
     current: true,
   },
   {
     degree: "Higher Secondary (12th)",
-    institution: "Your School Name",
-    period: "2021 - 2023",
+    institution: "Pragathi Junior College",
+    period: "2022 - 2024",
     description: "Completed with Science stream (PCM) with Computer Science as additional subject.",
     current: false,
   },
   {
     degree: "Secondary (10th)",
-    institution: "Your School Name",
-    period: "2021",
+    institution: "Luthern English Medium School",
+    period: "2022",
     description: "Completed secondary education with distinction.",
     current: false,
   },
