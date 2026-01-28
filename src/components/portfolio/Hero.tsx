@@ -1,0 +1,120 @@
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background glow effects */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
+      </div>
+
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+
+      <div className="container relative z-10 px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-4"
+        >
+          <span className="code-font text-primary text-sm tracking-wider">
+            &lt;hello world /&gt;
+          </span>
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+        >
+          I'm{" "}
+          <span className="gradient-text">Teja Jetti</span>
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8"
+        >
+          BTech 2nd Year Student • Full Stack Developer • Tech Enthusiast
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-wrap gap-4 justify-center mb-12"
+        >
+          <Button
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 glow-effect"
+            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            View My Work
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary"
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Get In Touch
+          </Button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="flex gap-6 justify-center"
+        >
+          <a
+            href="https://github.com/mrsivateja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Github className="w-6 h-6" />
+          </a>
+          <a
+            href="https://linkedin.com/in/teja-jetti-970158353"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Linkedin className="w-6 h-6" />
+          </a>
+          <a
+            href="mailto:your@email.com"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Mail className="w-6 h-6" />
+          </a>
+        </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 3 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          <ChevronDown className="w-6 h-6 text-muted-foreground" />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Hero;
