@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Send, Github, Linkedin, Twitter, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -55,8 +55,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <a href="mailto:your@email.com" className="text-muted-foreground hover:text-primary transition-colors">
-                  your@email.com
+                <a href="mailto:lova0443@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  lova0443@gmail.com
                 </a>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Location</h3>
-                <p className="text-muted-foreground">Your City, India</p>
+                <p className="text-muted-foreground">Kakinada, Andhra Pradesh, India</p>
               </div>
             </div>
 
@@ -75,7 +75,7 @@ const Contact = () => {
               <h3 className="font-semibold mb-4">Follow Me</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/mrsivateja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all"
@@ -83,7 +83,7 @@ const Contact = () => {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/teja-jetti-970158353"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all"
@@ -97,6 +97,22 @@ const Contact = () => {
                   className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all"
                 >
                   <Twitter className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://instagram.com/t3ja_j"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://wa.me/9491256991"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all"
+                >
+                  <MessageCircle className="w-5 h-5" />
                 </a>
               </div>
             </div>
