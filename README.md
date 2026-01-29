@@ -40,5 +40,5 @@ npm run build
 
 portfolio, react, typescript, vite, tailwindcss, framer-motion, web-development
 
-Visit Site : https://www.tejajetti.vercel.app
+Visit Site : https://tejajetti.vercel.app/
 
