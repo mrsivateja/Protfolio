@@ -40,7 +40,5 @@ npm run build
 
 portfolio, react, typescript, vite, tailwindcss, framer-motion, web-development
 
-## License
-
-MIT — see LICENSE for details (if applicable).
+Visit Site : tejajetti.vercel.app
 
