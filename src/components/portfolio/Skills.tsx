@@ -1,20 +1,17 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "React", level: 0 },
-  { name: "TypeScript", level: 0 },
-  { name: "Node.js", level: 0 },
-  { name: "Python", level: 50 },
-  { name: "MongoDB", level: 0 },
-  { name: "Git", level: 70 },
-  { name: "Tailwind CSS", level: 0 },
-  { name: "C++", level: 50 },
+  { name: "Java", level: 55 },
+  { name: "C", level: 60 },
+  { name: "Python", level: 55 },
+  { name: "HTML", level: 50 },
+  { name: "CSS", level: 30 },
+  
 ];
 
 const technologies = [
-  "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL",
-  "Python", "C++", "Git", "Docker", "AWS", "TypeScript", "Next.js", "Tailwind CSS",
-  "REST APIs", "GraphQL",
+  "C","Java","Python","HTML","CSS"
+  
 ];
 
 const Skills = () => {
